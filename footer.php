@@ -59,9 +59,106 @@
 
     </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+(function() {
+    emailjs.init({
+        publicKey: "-98ciwiGd5IX8L3Se",
+    });
+})();
+</script>
+
     <!-- Bootstrap JS -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<script>
+const propertyForm = document.getElementById("propertyForm");
+
+if(propertyForm){
+
+    propertyForm.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        let templateParams = {
+            owner_name: document.getElementById("owner_name").value,
+            mobile: document.getElementById("mobile").value,
+            email: document.getElementById("email").value,
+            property_type: document.getElementById("property_type").value,
+            district: document.getElementById("district").value,
+            area: document.getElementById("area").value,
+            price: document.getElementById("price").value,
+            location: document.getElementById("location").value,
+            details: document.getElementById("details").value
+        };
+
+        emailjs.send(
+            "service_r80ljeq",
+            "template_p5zkpub",
+            templateParams
+        )
+       .then(function() {
+
+    propertyForm.reset();
+
+    let modal = bootstrap.Modal.getInstance(
+        document.getElementById('postPropertyModal')
+    );
+
+    modal.hide();
+
+    let toast = new bootstrap.Toast(
+        document.getElementById('successToast')
+    );
+
+    toast.show();
+
+})
+        .catch(function(error){
+
+            alert("Failed to send enquiry");
+
+            console.log(error);
+
+        });
+
+    });
+
+}
+</script>
+
 </footer>
 
+
+<!-- Success Toast -->
+<div class="toast-container position-fixed top-50 start-50 translate-middle">
+
+    <div id="successToast"
+         class="toast border-0 shadow-lg"
+         role="alert"
+         data-bs-delay="3000"
+         data-bs-autohide="true"
+         style="
+            min-width:500px;
+            background:#198754;
+            color:#fff;
+            border-radius:15px;
+         ">
+
+        <div class="toast-body text-center py-4">
+
+            <h4 class="fw-bold mb-2">
+                🎉 Thank You!
+            </h4>
+
+            <p class="mb-0 fs-5">
+                Property Enquiry Submitted Successfully
+            </p>
+
+        </div>
+
+    </div>
+
+</div>

@@ -168,126 +168,116 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
                 </div>
 
-                <form>
+               <form id="propertyForm">
 
-                    <div class="row">
+<div class="row">
 
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label fw-semibold">
-                                Owner Name
-                            </label>
+    <div class="col-md-6 mb-3">
+        <label class="form-label fw-semibold">Owner Name</label>
+        <input type="text"
+               id="owner_name"
+               class="form-control"
+               placeholder="Enter Owner Name"
+               required>
+    </div>
 
-                            <input type="text"
-                                   class="form-control"
-                                   placeholder="Enter Owner Name">
-                        </div>
+    <div class="col-md-6 mb-3">
+        <label class="form-label fw-semibold">Mobile Number</label>
+        <input type="tel"
+               id="mobile"
+               class="form-control"
+               placeholder="Enter Mobile Number"
+               required>
+    </div>
 
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label fw-semibold">
-                                Mobile Number
-                            </label>
+    <div class="col-md-6 mb-3">
+        <label class="form-label fw-semibold">Email Address</label>
+        <input type="email"
+               id="email"
+               class="form-control"
+               placeholder="Enter Email Address"
+               required>
+    </div>
 
-                            <input type="tel"
-                                   class="form-control"
-                                   placeholder="Enter Mobile Number">
-                        </div>
+    <div class="col-md-6 mb-3">
+        <label class="form-label fw-semibold">Property Type</label>
 
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label fw-semibold">
-                                Email Address
-                            </label>
+        <select class="form-select"
+                id="property_type"
+                required>
+            <option value="">Select Property Type</option>
+            <option>Residential Plot</option>
+            <option>Farm Land</option>
+            <option>Commercial Land</option>
+            <option>Industrial Land</option>
+        </select>
+    </div>
 
-                            <input type="email"
-                                   class="form-control"
-                                   placeholder="Enter Email Address">
-                        </div>
+    <div class="col-md-6 mb-3">
+        <label class="form-label fw-semibold">District</label>
 
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label fw-semibold">
-                                Property Type
-                            </label>
+        <input type="text"
+               id="district"
+               class="form-control"
+               placeholder="Enter District">
+    </div>
 
-                            <select class="form-select">
-                                <option>Select Property Type</option>
-                                <option>Residential Plot</option>
-                                <option>Farm Land</option>
-                                <option>Commercial Land</option>
-                                <option>Industrial Land</option>
-                            </select>
-                        </div>
+    <div class="col-md-6 mb-3">
+        <label class="form-label fw-semibold">Land Area</label>
 
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label fw-semibold">
-                                District
-                            </label>
+        <input type="text"
+               id="area"
+               class="form-control"
+               placeholder="Ex: 1200 Sq.ft / 2 Acres">
+    </div>
 
-                            <input type="text"
-                                   class="form-control"
-                                   placeholder="Enter District">
-                        </div>
+    <div class="col-md-6 mb-3">
+        <label class="form-label fw-semibold">Expected Price</label>
 
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label fw-semibold">
-                                Land Area
-                            </label>
+        <input type="text"
+               id="price"
+               class="form-control"
+               placeholder="Enter Expected Price">
+    </div>
 
-                            <input type="text"
-                                   class="form-control"
-                                   placeholder="Ex: 1200 Sq.ft / 2 Acres">
-                        </div>
+    <div class="col-md-6 mb-3">
+        <label class="form-label fw-semibold">Village / Area</label>
 
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label fw-semibold">
-                                Expected Price
-                            </label>
+        <input type="text"
+               id="location"
+               class="form-control"
+               placeholder="Enter Location">
+    </div>
 
-                            <input type="text"
-                                   class="form-control"
-                                   placeholder="Enter Expected Price">
-                        </div>
+    <div class="col-12 mb-3">
+        <label class="form-label fw-semibold">Property Details</label>
 
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label fw-semibold">
-                                Village / Area
-                            </label>
+        <textarea id="details"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Road Access, Water Facility, Legal Documents, Nearby Landmarks etc..."></textarea>
+    </div>
 
-                            <input type="text"
-                                   class="form-control"
-                                   placeholder="Enter Location">
-                        </div>
+    <div class="col-12 text-end">
 
-                        <div class="col-12 mb-3">
-                            <label class="form-label fw-semibold">
-                                Property Details
-                            </label>
+        <button type="button"
+                class="btn btn-outline-secondary"
+                data-bs-dismiss="modal">
+            Cancel
+        </button>
 
-                            <textarea class="form-control"
-                                      rows="4"
-                                      placeholder="Road Access, Water Facility, Legal Documents, Nearby Landmarks etc..."></textarea>
-                        </div>
+        <button type="submit"
+                class="btn btn-success px-4">
+            <i class="fa-solid fa-paper-plane me-2"></i>
+            Submit Enquiry
+        </button>
 
-                    </div>
+    </div>
 
-                </form>
+</div>
 
-            </div>
 
-            <div class="modal-footer">
-
-                <button type="button"
-                        class="btn btn-outline-secondary"
-                        data-bs-dismiss="modal">
-                    Cancel
-                </button>
-
-                <button type="submit"
-                        class="btn btn-success px-4">
-
-                    <i class="fa-solid fa-paper-plane me-2"></i>
-
-                    Submit Enquiry
-
-                </button>
+</form>
 
             </div>
 
