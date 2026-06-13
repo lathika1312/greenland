@@ -112,7 +112,7 @@
                                 DTCP Approved
                             </span>
 
-                            <img src="assets/images/land1.jpg">
+                            <img src="assets/farrmland2.png">
                         </div>
 
                         <div class="land-details">

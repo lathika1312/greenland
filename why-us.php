@@ -57,7 +57,7 @@
 
                 </ul>
 
-                <a href="buy-land.php" class="browse-btn">
+                <a href="buyland.php" class="browse-btn">
                     Browse Properties
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -205,62 +205,113 @@
 
 </section>
 
-<!-- BUYING PROCESS -->
-
-<section class="process-section">
-
+<section class="workflow-section">
     <div class="container">
 
         <h2 class="section-title">
             Our Simple Buying Process
         </h2>
 
-        <div class="row g-4 mt-4">
+        <p class="workflow-subtitle">
+            Transparent, Easy & Secure Land Buying Experience
+        </p>
 
-            <div class="col-lg-2">
-                <div class="process-card">
-                    <span>1</span>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <h5>Search</h5>
+        <div class="workflow">
+
+            <!-- STEP 1 -->
+            <div class="workflow-step green">
+                <div class="step-number">01</div>
+
+                <div class="icon-box">
+                    <i class="fas fa-search"></i>
                 </div>
+
+                <h4>Search</h4>
+
+                <p>
+                    Find your perfect land
+                </p>
             </div>
 
-            <div class="col-lg-2">
-                <div class="process-card">
-                    <span>2</span>
-                    <i class="fa-solid fa-file-circle-check"></i>
-                    <h5>Verify</h5>
-                </div>
+            <div class="workflow-arrow">
+                <i class="fas fa-arrow-right"></i>
             </div>
 
-            <div class="col-lg-2">
-                <div class="process-card">
-                    <span>3</span>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h5>Visit Site</h5>
+            <!-- STEP 2 -->
+            <div class="workflow-step blue">
+                <div class="step-number">02</div>
+
+                <div class="icon-box">
+                    <i class="fas fa-file-circle-check"></i>
                 </div>
+
+                <h4>Verify</h4>
+
+                <p>
+                    Verify documents & approvals
+                </p>
             </div>
 
-            <div class="col-lg-2">
-                <div class="process-card">
-                    <span>4</span>
-                    <i class="fa-solid fa-wallet"></i>
-                    <h5>Payment</h5>
-                </div>
+            <div class="workflow-arrow">
+                <i class="fas fa-arrow-right"></i>
             </div>
 
-            <div class="col-lg-2">
-                <div class="process-card">
-                    <span>5</span>
-                    <i class="fa-solid fa-stamp"></i>
-                    <h5>Register</h5>
+            <!-- STEP 3 -->
+            <div class="workflow-step orange">
+                <div class="step-number">03</div>
+
+                <div class="icon-box">
+                    <i class="fas fa-location-dot"></i>
                 </div>
+
+                <h4>Visit Site</h4>
+
+                <p>
+                    Inspect the property location
+                </p>
+            </div>
+
+            <div class="workflow-arrow">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="workflow-step purple">
+                <div class="step-number">04</div>
+
+                <div class="icon-box">
+                    <i class="fas fa-wallet"></i>
+                </div>
+
+                <h4>Payment</h4>
+
+                <p>
+                    Secure & transparent payment
+                </p>
+            </div>
+
+            <div class="workflow-arrow">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <!-- STEP 5 -->
+            <div class="workflow-step red">
+                <div class="step-number">05</div>
+
+                <div class="icon-box">
+                    <i class="fas fa-stamp"></i>
+                </div>
+
+                <h4>Register</h4>
+
+                <p>
+                    Complete ownership registration
+                </p>
             </div>
 
         </div>
 
     </div>
-
 </section>
 
 <!-- COMMITMENT -->
@@ -273,7 +324,7 @@
 
             <div class="col-lg-6">
 
-                <img src="assets/images/commitment.jpg"
+                <img src="assets/farmbanner.png"
                      class="commit-img"
                      alt="">
 
@@ -386,7 +437,7 @@
 
             <div>
 
-                <a href="buy-land.php"
+                <a href="buyland.php"
                    class="cta-btn">
                     Browse Properties
                 </a>

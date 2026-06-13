@@ -43,7 +43,7 @@
                             DTCP Approved
                         </span>
 
-                        <img src="assets/images/land-1.jpg" alt="">
+                        <img src="assets/about.jpeg" alt="">
 
                         <div class="gallery-actions">
                             <button>
@@ -59,16 +59,16 @@
 
                     <div class="thumb-gallery">
 
-                        <img src="assets/images/land-1.jpg">
+                        <img src="assets/land1.jpeg">
 
-                        <img src="assets/images/land-2.jpg">
+                        <img src="assets/land2.jpeg">
 
-                        <img src="assets/images/land-3.jpg">
+                        <img src="assets/farmlands.png">
 
-                        <img src="assets/images/land-4.jpg">
+                        <img src="assets/land3.jpeg">
 
-                        <div class="more-images">
-                            +8
+                        <div class="more-images" style="background-image:url('assets/about.jpeg');">
+                                  +8
                         </div>
 
                     </div>
@@ -189,55 +189,44 @@
 
                         <!-- Location -->
 
-                        <div class="tab-pane fade"
-                             id="location">
+                  <div class="tab-pane fade" id="location">
 
-                            <p>
-                                Located at Oragadam SIPCOT Industrial Hub.
-                            </p>
+    <p class="overview-text">
+        Property Address:
+        Thennadu Nilam Layout,
+        Oragadam Main Road,
+        Sriperumbudur,
+        Chennai - 602105,
+        Tamil Nadu, India.
+    </p>
 
-                            <ul>
-
-                                <li>GST Road - 10 KM</li>
-
-                                <li>Airport - 25 KM</li>
-
-                                <li>Schools - 2 KM</li>
-
-                                <li>Hospitals - 5 KM</li>
-
-                            </ul>
-
-                        </div>
+</div>
 
                         <!-- Documents -->
 
                         <div class="tab-pane fade"
-                             id="documents">
+     id="documents">
 
-                            <ul>
+    <p class="overview-text">
+        All legal documents are available and verified.
+        Property is ready for registration and construction.
+    </p>
 
-                                <li>
-                                    <a href="#">
-                                        DTCP Approval Copy
-                                    </a>
-                                </li>
+    <ul class="amenities-list">
 
-                                <li>
-                                    <a href="#">
-                                        Patta Copy
-                                    </a>
-                                </li>
+        <li>DTCP Approval Copy Available</li>
 
-                                <li>
-                                    <a href="#">
-                                        Layout Plan
-                                    </a>
-                                </li>
+        <li>Patta Copy Available</li>
 
-                            </ul>
+        <li>Layout Plan Available</li>
 
-                        </div>
+        <li>Parent Documents Available</li>
+
+        <li>Encumbrance Certificate Available</li>
+
+    </ul>
+
+</div>
 
                     </div>
 
@@ -294,13 +283,13 @@
                         <strong>DTCP Approved</strong>
                     </div>
 
-                    <a href="#"
+                    <a href="tel:+919876543210"
                        class="owner-btn">
                         <i class="fa-solid fa-phone"></i>
                         Get Owner Contact
                     </a>
 
-                    <a href="#"
+                    <a href="https://wa.me/919942620101?text=Hello%20Owner,%20I%20am%20interested%20in%20buying%20this%20land.%20Please%20share%20more%20details."
                        class="whatsapp-btn-land">
                         <i class="fab fa-whatsapp"></i>
                         Chat on WhatsApp

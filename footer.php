@@ -8,48 +8,59 @@
 
         <div class="row">
 
-            <div class="col-lg-4">
+    <div class="col-lg-3 col-md-6 mb-4">
 
-                <h4>Thennattu Nilam</h4>
+    <h4>Thennattu Nilam</h4>
 
-                <p>
-                    Buy Land. Build Future.
-                    Tamil Nadu's trusted land platform.
-                </p>
+    <p>
+        Buy Land. Build Future.
+        Tamil Nadu's trusted land platform.
+    </p>
 
-            </div>
+    <div class="footer-social">
 
-            <div class="col-lg-4">
+        <a href="#" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
 
-                <h4>Quick Links</h4>
+        <a href="#" class="instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
 
-                <ul>
+        <a href="#" class="youtube">
+            <i class="fab fa-youtube"></i>
+        </a>
 
-                    <li><a href="#">Home</a></li>
+    </div>
 
-                    <li><a href="#">Buy Land</a></li>
+</div>
 
-                    <li><a href="#">Sell Land</a></li>
+    <div class="col-lg-3 col-md-6 mb-4">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="buyland.php">Buy Land</a></li>
+            <li><a href="sell-land.php">Sell Land</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </div>
 
-                    <li><a href="#">Contact</a></li>
+    <div class="col-lg-3 col-md-6 mb-4">
+        <h4>Legal</h4>
+        <ul>
+            <li><a href="privacy-policy.php">Privacy Policy</a></li>
+            <li><a href="Conditions.php">Terms & Conditions</a></li>
+        </ul>
+    </div>
 
-                </ul>
+    <div class="col-lg-3 col-md-6 mb-4">
+        <h4>Contact</h4>
+        <p>📞 +91 98765 43210</p>
+        <p>✉ support@greenland.com</p>
+        <p>📍 Chennai, Tamil Nadu</p>
+    </div>
 
-            </div>
-
-            <div class="col-lg-4">
-
-                <h4>Contact</h4>
-
-                <p>📞 +91 98765 43210</p>
-
-                <p>✉ support@greenland.com</p>
-
-                <p>📍 Chennai, Tamil Nadu</p>
-
-            </div>
-
-        </div>
+</div>
 
         <hr>
 

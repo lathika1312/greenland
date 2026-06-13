@@ -386,6 +386,142 @@ ul{
     color:#666;
 }
 
+
+.workflow-section{
+    padding:80px 0;
+    background:#f8fafc;
+}
+
+.section-title{
+    text-align:center;
+    font-size:52px;
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.workflow-subtitle{
+    text-align:center;
+    color:#64748b;
+    font-size:18px;
+    margin-bottom:70px;
+}
+
+.workflow{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.workflow-step{
+    width:220px;
+    background:#fff;
+    border-radius:30px;
+    text-align:center;
+    padding:35px 20px;
+    position:relative;
+    overflow:visible;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.step-number{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#fff;
+    font-size:30px;
+    font-weight:700;
+    position:absolute;
+    top:-35px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:5px solid currentColor;
+}
+
+.icon-box{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#fff;
+    margin:40px auto 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.icon-box i{
+    font-size:45px;
+}
+
+.workflow-step h4{
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.workflow-step p{
+    font-size:15px;
+    line-height:1.7;
+}
+
+.workflow-arrow{
+    font-size:35px;
+    color:#94a3b8;
+}
+
+/* COLORS */
+
+.green{
+    border:3px solid #16a34a;
+    color:#16a34a;
+}
+
+.blue{
+    border:3px solid #2563eb;
+    color:#2563eb;
+}
+
+.orange{
+    border:3px solid #f97316;
+    color:#f97316;
+}
+
+.purple{
+    border:3px solid #9333ea;
+    color:#9333ea;
+}
+
+.red{
+    border:3px solid #ef4444;
+    color:#ef4444;
+}
+
+@media(max-width:991px){
+
+    .workflow{
+        flex-direction:column;
+    }
+
+    .workflow-arrow{
+        transform:rotate(90deg);
+    }
+
+    .workflow-step{
+        width:100%;
+        max-width:350px;
+    }
+}
+
+
+/*why us page close*/
+
+
 /* =========================
    FOOTER
 ========================= */
@@ -649,7 +785,9 @@ ul{
 
 /*sell land page close*/
 
-/*about us page*/
+/* =========================
+   ABOUT PAGE
+========================= */
 
 .about-banner{
     width:100%;
@@ -669,30 +807,71 @@ ul{
     line-height:1.9;
 }
 
+/* =========================
+   STATS
+========================= */
+
 .stat-box{
-    border:1px solid #e8e8e8;
-    border-radius:18px;
-    padding:25px;
+    background:#eef8ef;
+    border-radius:20px;
+    padding:30px 20px;
+
     display:flex;
     align-items:center;
+    justify-content:center;
+
     gap:20px;
-    background:#fff;
+
+    min-height:160px;
+    height:100%;
+
+    transition:0.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .stat-icon{
     width:70px;
     height:70px;
-    background:#edf7ed;
+    min-width:70px;
+
     border-radius:50%;
+    background:#fff;
+
     display:flex;
     align-items:center;
     justify-content:center;
 }
 
 .stat-icon i{
-    color:#0A7C2F;
-    font-size:28px;
+    font-size:30px;
+    color:#0f8f3b;
 }
+
+.stat-box h3{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:5px;
+    color:#0f172a;
+}
+
+.stat-box p{
+    font-size:20px;
+    font-weight:600;
+    color:#64748b;
+    margin:0;
+}
+
+.stat-box div:last-child{
+    text-align:left;
+}
+
+/* =========================
+   MISSION / VISION / VALUES
+========================= */
 
 .mission-wrapper{
     margin-top:40px;
@@ -708,15 +887,29 @@ ul{
     display:flex;
     gap:25px;
     padding:20px;
+    min-height:260px;
+    align-items:flex-start;
 }
 
 .mission-item:not(:last-child){
     border-right:1px solid #e6e6e6;
 }
 
+.mission-item > div:last-child{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.mission-item p,
+.values-list{
+    flex-grow:1;
+}
+
 .mission-icon{
     width:80px;
     height:80px;
+    min-width:80px;
     background:#edf7ed;
     border-radius:50%;
     display:flex;
@@ -736,6 +929,20 @@ ul{
     border-radius:10px;
     margin:15px 0;
 }
+
+.values-list{
+    list-style:none;
+    padding-left:0;
+    margin:0;
+}
+
+.values-list li{
+    margin-bottom:10px;
+}
+
+/* =========================
+   FEATURES
+========================= */
 
 .bottom-features{
     margin-top:35px;
@@ -760,6 +967,68 @@ ul{
     color:#0A7C2F;
     font-size:35px;
 }
+
+.more-images{
+    width:120px;
+    height:120px;
+    background-size:cover;
+    background-position:center;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:991px){
+
+    .about-title{
+        font-size:38px;
+    }
+
+    .about-text{
+        font-size:18px;
+    }
+
+    .mission-wrapper{
+        grid-template-columns:1fr;
+        padding:25px;
+    }
+
+    .mission-item{
+        min-height:auto;
+        border-right:none !important;
+        border-bottom:1px solid #e6e6e6;
+    }
+
+    .mission-item:last-child{
+        border-bottom:none;
+    }
+
+    .bottom-features{
+        grid-template-columns:1fr;
+    }
+
+    .feature{
+        border-right:none !important;
+        border-bottom:1px solid #ececec;
+        padding:15px 0;
+    }
+
+    .feature:last-child{
+        border-bottom:none;
+    }
+}
+
+
+/* about page close*/
+
 
 /* =========================
    CONTACT PAGE
@@ -2781,3 +3050,66 @@ RESPONSIVE
 }
 
 /*privacy polichy page close*/
+
+/*footer*/ 
+
+.footer .row{
+    align-items:flex-start;
+}
+
+.footer h4{
+    margin-bottom:20px;
+}
+
+.footer p,
+.footer li{
+    margin-bottom:12px;
+}
+
+/*footer social media*/ 
+
+
+.footer-social{
+    margin-top:20px;
+}
+
+.footer-social a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    margin-right:10px;
+    font-size:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.footer-social .facebook{
+    background:#1877F2;
+    color:#fff;
+}
+
+.footer-social .instagram{
+    background:linear-gradient(
+        45deg,
+        #f09433,
+        #e6683c,
+        #dc2743,
+        #cc2366,
+        #bc1888
+    );
+    color:#fff;
+}
+
+.footer-social .youtube{
+    background:#FF0000;
+    color:#fff;
+}
+
+.footer-social a:hover{
+    transform:translateY(-5px);
+}
+
+/*footer social media close*/ 

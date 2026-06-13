@@ -126,7 +126,7 @@
 
                         <h4>₹ 18,00,000</h4>
 
-                        <a href="#" class="view-btn">
+                        <a href="land-details.php" class="view-btn">
                             View Details
                         </a>
 
@@ -158,7 +158,7 @@
 
                         <h4>₹ 32,00,000</h4>
 
-                        <a href="#" class="view-btn">
+                        <a href="land-details.php" class="view-btn">
                             View Details
                         </a>
 
@@ -190,7 +190,7 @@
 
                         <h4>₹ 22,50,000</h4>
 
-                        <a href="#" class="view-btn">
+                        <a href="land-details.php" class="view-btn">
                             View Details
                         </a>
 
@@ -222,7 +222,7 @@
 
                         <h4>₹ 28,50,000</h4>
 
-                        <a href="#" class="view-btn">
+                        <a href="land-details.php" class="view-btn">
                             View Details
                         </a>
 
